@@ -22,7 +22,7 @@ $V=[v_1,v_2,\dots,v_C]$ is the learned set of filter kernels
 
 We can write the output of the transformation $F_{tr}$ as $U=[u_1,u_2,\dots,u_C]$ where
 
-$$ u_c=v_c*X=\sum_{s=1}^{C^{'}}v_c^s*x^s.\tag{1}$$
+![$$ u_c=v_c*X=\sum_{s=1}^{C^{'}}v_c^s*x^s.\tag{1}$$](<img src="http://latex.codecogs.com/svg.latex?&space;u_c=v_c*X=\sum_{s=1}^{C^{'}}v_c^s*x^s." title="http://latex.codecogs.com/svg.latex? u_c=v_c*X=\sum_{s=1}^{C^{'}}v_c^s*x^s." />)
 
 where $v_c=[v_c^1,v_c^2,\dots,v_c^{C^{'}}]$ and $X=[x^1,x^2,\dots ,x^{C{'}}]$
 
