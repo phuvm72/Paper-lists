@@ -9,7 +9,7 @@ The SE block is illustrate in the Figure below
 
 ![Squeeze and Excitaion block](/attention/figures/Squeeze_n_Excitation.JPG)
 
-If we have a transformation $F_{tr}: X \rightarrow U$, where $X \in \mathbb{R}^{H^{'} \times W^{'}\times C^{'}}$ and $U\in \mathbb{R}^{H\times W\times C}$
+If we have a transformation ![$F_{tr}: X \rightarrow U$](http://latex.codecogs.com/svg.latex?F_%7Btr%7D:%C2%A0X%C2%A0%5Crightarrow%C2%A0U), where ![$X \in \mathbb{R}^{H^{'} \times W^{'}\times C^{'}}$](http://latex.codecogs.com/svg.latex?X%C2%A0%5Cin%C2%A0%5Cmathbb%7BR%7D%5E%7BH%5E%7B'%7D%C2%A0%5Ctimes%C2%A0W%5E%7B'%7D%5Ctimes%C2%A0C%5E%7B'%7D%7D) and ![$U\in \mathbb{R}^{H\times W\times C}$](http://latex.codecogs.com/svg.latex?U%5Cin%C2%A0%5Cmathbb%7BR%7D%5E%7BH%5Ctimes%C2%A0W%5Ctimes%C2%A0C%7D)
 
 The feature U first will be passed through a squeeze operator to produce a channel descriptor. We can understand that this operator, for each channel, will squeeze the image into a single number. This will let the information from the global receptive field in the network to be leveraged by its lower layers. Then the excitation operation is applied, which has the self-gating mechanism. Finally the feature map U will be multiplied with the output of excitation gate to create the SE block output, and can be fed into the next layers.
 
