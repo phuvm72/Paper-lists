@@ -36,7 +36,7 @@ where:
 
 In this section, the authors present various versions of ![$f$](/equation/attention/nonlocal/2.gif) and ![$g$](/equation/attention/nonlocal/3.gif). It is noticeable that the choices of these function are not affected much the overall result, but the main impact is the structure of non-local operation.
 
-They only consider g as the linear embedding: ![$g(x_j)=W_gx_j$]((/equation/attention/nonlocal/4.gif)) where ![$W_g$]((/equation/attention/nonlocal/5.gif)) is a weight matrix to be learned
+They only consider g as the linear embedding: ![$g(x_j)=W_gx_j$](/equation/attention/nonlocal/4.gif) where ![$W_g$](/equation/attention/nonlocal/5.gif) is a weight matrix to be learned
 
 ### Gaussian
 
@@ -82,3 +82,5 @@ Typically, they set ![$T=4, H=W=14\ or\ 7$](/equation/attention/nonlocal/17.gif)
 ![result2](/attention/figures/result2_nonlocal.JPG)
 
 ## Adding Non-local block to MaskRCNN for COCO dataset
+
+![result3](/attention/figures/result3_nonlocal.JPG)
