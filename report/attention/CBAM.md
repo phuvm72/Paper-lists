@@ -1,6 +1,6 @@
 # CBAM: Convolution Block Attention Module
 
-This is a brief summar of the [CBAM paper](/attention/CBAM_Convolutional_Block_Attention_Module_ECCV’18.pdf)
+This is a brief summarization of the orignal [CBAM paper](/attention/CBAM_Convolutional_Block_Attention_Module_ECCV’18.pdf)
 
 ![CBAM](/attention/figures/CBAM.JPG)
 
@@ -23,7 +23,8 @@ Channel attention focuses on 'what' is meaningful in the feature. This module wi
 The channel attention module is computed as:
 
 ![$$ M_C(F) = \sigma(MLP(AvgPool(F)+MLP(MaxPool(F))))\\= \sigma(W_1\delta(W_0(F^c_{avg}))+W_1\delta(W_0(F^c_{max}))) $$](/equation/attention/cbam/6.gif)
-where ![$\sigma$](/equation/attention/cbam/7.gif) denotes the sigmoid function, $\delta$ is the ReLU activation function ![$W_0\in \mathbb{R}^{\frac{C}{r}\times C}$](/equation/attention/cbam/8.gif) and  ![$W_1\in \mathbb{R}^{ C \times\frac{C}{r}}$](/equation/attention/cbam/9.gif) and r is the reduction ratio
+
+where ![$\sigma$](/equation/attention/cbam/7.gif) denotes the sigmoid function, $\delta$ is the ReLU activation function ![$W_0\in \mathbb{R}^{\frac{C}{r}\times C}$](/equation/attention/cbam/8.gif) and  ![$W_1\in \mathbb{R}^{ C \times\frac{C}{r}}$](/equation/attention/cbam/9.gif) and r is the reduction ratio.
 
 ## Spatial attention module 
 
@@ -35,7 +36,7 @@ The spatial attention module is computed as:
 
 ![$$ M_S(F) = \sigma (f^{7 \times 7}([AvgPool(F);MaxPool(F)]))\\ = \sigma (f^{7 \times 7}(F^s_{avg};F^s_{max}))$$](/equation/attention/cbam/10.gif)
 
-![resblock](/attention/figures/resblock.JPG)
+![resblock](/attention/figures/Resblock.JPG)
 
 The CBAM block can be apply anywhere in the architecture just like SE block, with a little extra computation. Even though this module is just add one extra Spatial attention block and slightly adjust the Pooling method, it can achieve a remarkable result compared to SE block. They also showed that the importantance of Maxpooling features.
 
