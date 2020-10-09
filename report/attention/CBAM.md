@@ -24,7 +24,7 @@ The channel attention module is computed as:
 
 ![$$ M_C(F) = \sigma(MLP(AvgPool(F)+MLP(MaxPool(F))))\\= \sigma(W_1\delta(W_0(F^c_{avg}))+W_1\delta(W_0(F^c_{max}))) $$](/equation/attention/cbam/6.gif)
 
-where ![$\sigma$](/equation/attention/cbam/7.gif) denotes the sigmoid function, $\delta$ is the ReLU activation function ![$W_0\in \mathbb{R}^{\frac{C}{r}\times C}$](/equation/attention/cbam/8.gif) and  ![$W_1\in \mathbb{R}^{ C \times\frac{C}{r}}$](/equation/attention/cbam/9.gif) and r is the reduction ratio.
+where ![$\sigma$](/equation/attention/cbam/7.gif) denotes the sigmoid function, ![$\delta$](/equation/attention/cbam/11.gif) is the ReLU activation function ![$W_0\in \mathbb{R}^{\frac{C}{r}\times C}$](/equation/attention/cbam/8.gif) and  ![$W_1\in \mathbb{R}^{ C \times\frac{C}{r}}$](/equation/attention/cbam/9.gif) and r is the reduction ratio.
 
 ## Spatial attention module 
 
